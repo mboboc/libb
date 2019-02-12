@@ -28,12 +28,12 @@ The following library is inspired by the indivitual project named LIBFT from
 	**FT_STRLEN:** size_t 	ft_strlen(const char *str);
 		- returns length of string
 	**FT_STRDUP:** char *ft_strdup(const char *str);
-		-returns pointer to a null-terminated byte string, which is a dublicate of the string provided by str
-		-DOESNT free the memory 
+		- returns pointer to a null-terminated byte string, which is a dublicate of the string provided by str
+		- DOESN'T free the memory 
 	**FT_STRCPY:** char *ft_strcpy(char * dest, const char *src);
-		-copies src in dest, including the terminating null character
+		- copies src in dest, including the terminating null character
 	**FT_STRNCPY:** char *ft_strncpy(char *dest, const char *src, size_t n)
-		-copies up to n characters from src to dest
-		-if length of src is less than that of n, the remainder of dest will be padded with null bytes
+		- copies up to n characters from src to dest
+		- if length of src is less than that of n, the remainder of dest will be padded with null bytes
 
 
