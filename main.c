@@ -84,7 +84,39 @@ void test_ft_strncpy(void) {
 	printf("%s", strncpy(dest, source, num));
 }
 
+void test_ft_strcat() {
+	char str[80];
+	strcpy (str,"these ");
+	ft_strcat(str,"strings ");
+	ft_strcat(str,"are ");
+	ft_strcat(str,"concatenated.");
+	puts (str); 
+}
+
+void test_ft_strncat() {
+	char str1[20];
+  	char str2[20];
+  	strcpy (str1,"To be ");
+  	strcpy (str2,"or not to be");
+  	ft_strncat (str1, str2, 6);
+  	puts (str1);
+}
+
+void test_ft_strlcat() {
+
+}
+
+void test_ft_strchr() {
+	const char str[] = "http://www.tutorialspoint.com";
+   	const char ch = '.';
+   	char *ret;
+
+   	ret = ft_strchr(str, ch);
+
+   	printf("String after |%c| is - |%s|\n", ch, ret);
+}
+
 int main () {
-	test_ft_strncpy();
+	test_ft_strchr();
 	return(0);
 }
