@@ -67,3 +67,16 @@ size_t n);
   - parses the string str interpreting its content as an integral number,
   which is returned as a value of type int
 - **FT_ISALPHA:** int ft_isalpha(int c);
+  - checks if c is a letter
+- **FT_ISDIGIT:** int ft_isdigit(int c);
+  - checks if c is a digit
+- **FT_ISALNUM:** int ft_isalnum(int c);
+  - checks if c is a digit or a letter
+- **FT_ISASCII:** int ft_isascii(int c);
+  - checks if c is ASCII
+- **FT_ISPRINT:** int ft_isprint(int c);
+  - checks if c is printable
+- **FT_TOUPPER:** int ft_toupper(int c);
+  - turns all lower chars to upper
+- **TO_LOWER:** int ft_tolower(int c);
+  - turns all upper chars to lower
