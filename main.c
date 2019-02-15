@@ -116,7 +116,79 @@ void test_ft_strchr() {
    	printf("String after |%c| is - |%s|\n", ch, ret);
 }
 
+void test_ft_strrchr() {
+	char str[] = "This is a sample string";
+	char *pch;
+	pch = ft_strrchr(str,'s');
+	printf ("Last occurence of 's' found at %ld \n", pch-str + 1);
+	 
+}
+
+void test_ft_strstr() {
+	const char haystack[20] = "Tutorialsbunaghytrsf";
+   	const char needle[10] = "buna";
+   	char *ret;
+
+   	ret = ft_strstr(haystack, needle);
+
+
+   	printf("The string is: %s\n", haystack);
+   	printf("The substring is: %s\n", ret);
+}
+
+void test_ft_strnstr() {
+	const char haystack[20] = "Tutorialsbunaghytrsf";
+   	const char needle[10] = "buna";
+   	char *ret;
+
+   	ret = ft_strnstr(haystack, needle, 5);
+
+
+   	printf("The string is: %s\n", haystack);
+   	printf("The substring is: %s\n", ret);
+}
+
+void test_ft_strcmp() {
+	char str1[15];
+   	char str2[15];
+   	int ret;
+
+   	strcpy(str1, "abcdef");
+   	strcpy(str2, "ABCDEF");
+
+   	ret = ft_strcmp(str1, str2);
+
+   	if(ret < 0) {
+      printf("str1 is less than str2");
+   	} else if(ret > 0) {
+      printf("str2 is less than str1");
+   	} else {
+      printf("str1 is equal to str2");
+   }
+}
+
+void test_ft_strncmp() {
+	char str1[15];
+   	char str2[15];
+   	int ret;
+
+   	strcpy(str1, "abcdef");
+   	strcpy(str2, "abcCDEF");
+
+   	ret = ft_strncmp(str1, str2, 3);
+
+   	if(ret < 0) {
+      printf("str1 is less than str2");
+   	} else if(ret > 0) {
+      printf("str2 is less than str1");
+   	} else {
+      printf("str1 is equal to str2");
+   }
+}
+
+
 int main () {
-	test_ft_strchr();
+	int c = 42;
+	ft_isalpha(c);
 	return(0);
 }
